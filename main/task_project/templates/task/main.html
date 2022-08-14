@@ -1,0 +1,22 @@
+{%extends 'task/layout.html'%}
+
+{% block title_content %}
+{{title}}
+{%endblock%}
+
+{% block head_content %}
+<div align="center">
+<h1>It is main page</h1>
+{% for el in data %}
+
+    <div class="alert alert-warning mt-2 ">
+        <h3>{{el.title}}</h3>
+        <p>{{el.task}}</p>
+        <p>{{el.date}}</p>
+    </div>
+
+{%endfor%}
+{%endblock%}
+</div>
+
+
